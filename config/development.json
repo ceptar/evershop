@@ -1,0 +1,19 @@
+{
+    "shop" : {
+      "currency": "EUR",
+      "language": "en",
+      "weightUnit": "kg",
+      "timezone": "Europe/Vienna"
+    },
+    "system": {
+      "database": {
+        "host": "localhost",
+        "port": 5432,
+        "database": "evershop",
+        "user": "admin",
+        "password": "123456"
+      },
+      "theme": "eve"
+    }
+  }
+  

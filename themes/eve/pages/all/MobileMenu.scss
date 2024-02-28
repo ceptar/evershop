@@ -1,0 +1,49 @@
+.main-menu-mobile {
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  .menu-icon {
+    svg {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+  .nav {
+    cursor: pointer;
+    background-color: #fff;
+    bottom:0;
+    height:100%;
+    left: 50%;
+    position: fixed; /* Remove absolute positioning */
+    top: 80px; /* Position at the top of the parent */
+    right: 0;
+
+
+
+    .nav-item {
+      padding-left:1.5rem;
+      width: 100%;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--border);
+      &:first {
+        padding-top: 80px;
+      }
+      &.last {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+      a, span {
+        cursor: pointer;
+        font-size: 1.6rem;
+        padding-left:20px;
+        margin-left:auto;
+        margin-right:20px;
+      }
+    }
+  }
+}
+.mobile-menu {
+  z-index: 1000; /* Adjust this value as needed */
+}
